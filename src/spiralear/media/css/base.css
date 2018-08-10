@@ -170,7 +170,6 @@ hr {
 #content-inside.products {
   padding: 50px;
   text-align: justify;
-  font-weight: lighter;
   background: url(/media/img/background_middle.png) #fff top left repeat-y;
 }
 
@@ -187,6 +186,10 @@ hr {
 #content-inside.products #left p.small {
   font-size: x-small;
   margin-bottom: 1em;
+}
+
+#content-inside.products #left ul {
+  margin-top: 1em;
 }
 
 #content-inside.products li {
@@ -265,9 +268,23 @@ hr {
   padding-bottom: 4em;
 }
 
+#content-inside.text h1 {
+  font-weight: bold;
+}
+
 #content-inside.text h2 {
   font-weight: bold;
   padding-top: 1.5em;
+}
+
+#content-inside.text ul {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+#content-inside.text li {
+  margin-left: 2.5em;
+  list-style: disc;
 }
 
 /** gallery **/
@@ -344,7 +361,7 @@ table.newsfeed td.fb {
 
 .colors {
   margin: 0 auto;
-  width: 510px;
+  width: 590px;
 }
 
 .colors .preview {

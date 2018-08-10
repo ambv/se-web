@@ -35,7 +35,7 @@ from spiralear.website.models import Language
 
 
 def handler(request, url, lang):
-    bump = 1
+    bump = 2
     url = url.lower()
     lang_symbol = lang.lower()
     lang = Language.IDFromName(lang_symbol, fallback=Language.en.id)
@@ -43,7 +43,7 @@ def handler(request, url, lang):
         u = Url.objects.get(url=url, lang=lang)
         c = Content.objects.get(url=u)
     except (Url.DoesNotExist, Content.DoesNotExist):
-        redirect(request)
+        return HttpResponseRedirect('/en/')
 
     menu = _generate_menu(lang)
     _mark_active(menu, u)
