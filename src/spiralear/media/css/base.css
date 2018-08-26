@@ -389,15 +389,18 @@ table.newsfeed td.fb {
   display: block;
   position: absolute;
   top: 722px;
-  left: 510px;
-  width: 172px;
-  height: 30px;
-  background: black;
-  opacity: 0;
+  left: 480px;
+  width: 232px;
+  height: 24px;
+  padding-top: 6px;
 }
 
 .christidis:hover {
-  opacity: 0.1;
+  background-color: #eeeeee;
+}
+
+.christidis a {
+  color: #3897f0;
 }
 
 .colors {
