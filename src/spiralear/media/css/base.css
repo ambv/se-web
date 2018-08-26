@@ -197,6 +197,10 @@ hr {
   list-style: disc;
 }
 
+#content-inside.products ul.se6 li {
+  margin-bottom: 1em;
+}
+
 #content-inside.products #left {
     float: left;
     width: 464px;
@@ -296,6 +300,12 @@ hr {
     margin-top: 4px;
 }
 
+#content-inside.gallery img.arrow {
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
 #content-inside.gallery img.gal {
   margin-top: 14px;
 }
@@ -357,6 +367,37 @@ table.newsfeed td.fb {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+
+.new-price {
+  color: red;
+}
+
+.nope {
+  text-decoration: line-through;
+}
+
+.price-drop {
+  color: gray;
+}
+
+.price-drop a {
+  text-decoration: underline;
+}
+
+.christidis {
+  display: block;
+  position: absolute;
+  top: 722px;
+  left: 510px;
+  width: 172px;
+  height: 30px;
+  background: black;
+  opacity: 0;
+}
+
+.christidis:hover {
+  opacity: 0.1;
 }
 
 .colors {

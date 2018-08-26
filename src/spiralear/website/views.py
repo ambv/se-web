@@ -35,7 +35,7 @@ from spiralear.website.models import Language
 
 
 def handler(request, url, lang):
-    bump = 2
+    bump = 3
     url = url.lower()
     lang_symbol = lang.lower()
     lang = Language.IDFromName(lang_symbol, fallback=Language.en.id)
@@ -149,5 +149,9 @@ class BlockRenderer(object):
         for k in r.GET:
             get[k] = r.GET[k]
         self.context['get'] = get
+        try:
+            self.context['gallery_page'] = int((int(r.GET['photo']) - 1) / 16.0) + 1
+        except Exception as e:
+            self.context['gallery_page'] = 1
         return mark_safe(self.blocks[key].render(RequestContext(r,
                                                  self.context)))
